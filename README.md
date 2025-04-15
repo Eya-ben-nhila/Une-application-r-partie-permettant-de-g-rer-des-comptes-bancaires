@@ -1,27 +1,30 @@
 # Une-application-r-partie-permettant-de-g-rer-des-comptes-bancaires
 A distributed banking application that manages bank accounts with both TCP and UDP implementations.
 
-Features
-Account management (create, check balance, deposit, withdraw)
+Features:
 
-Two versions: TCP (connection-oriented) and UDP (connectionless)
++ Account management (create, check balance, deposit, withdraw)
 
-Proper error handling and response formatting
++ Two versions: TCP (connection-oriented) and UDP (connectionless)
 
-Thread-safe account operations
++ Proper error handling and response formatting
 
-Protocol Commands
-CREATION id amount - Create account
++ Thread-safe account operations
 
-POSITION id - Check balance
+Protocol Commands:
 
-AJOUT id amount - Deposit money
+* CREATION id amount - Create account
 
-RETRAIT id amount - Withdraw money
+* POSITION id - Check balance
 
-Response Formats
-OK command
+* AJOUT id amount - Deposit money
 
-ERREUR reason
+* RETRAIT id amount - Withdraw money
 
-POS balance last_operation_date
+Response Formats:
+
+- OK command
+
+- ERREUR reason
+
+- POS balance last_operation_date
